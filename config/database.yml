@@ -13,7 +13,7 @@ development:
     port: 5432
     username: postgres
     password: kenrome
-    database: refinarycms_cn
+    database: refinerycms_cn
     schema_search_path: public
     encoding: unicode
 
@@ -41,7 +41,7 @@ test:
     port: 5432
     username: postgres
     password: kenrome
-    database: refinarycms_cn
+    database: refinerycms_cn
     schema_search_path: public
     encoding: unicode
 production:
@@ -50,6 +50,6 @@ production:
     port: 5432
     username: postgres
     password: kenrome
-    database: refinarycms_cn
+    database: refinerycms_cn
     schema_search_path: public
     encoding: unicode

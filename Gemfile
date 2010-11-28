@@ -5,8 +5,8 @@ gem 'rails', '3.0.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
-
+#gem 'sqlite3-ruby', :require => 'sqlite3'
+ gem 'pg'
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -44,14 +44,14 @@ gem 'refinerycms-inquiries',    '~> 0.9.8.8'
 gem 'refinerycms-i18n',         '~> 0.9.8.7'
 
 # Figure out how to get RMagick:
-#rmagick_options = {:require => false}
-#rmagick_options.update({
-#  :git => 'git://github.com/refinerycms/rmagick.git',
-#  :branch => 'windows'
-#}) if Bundler::WINDOWS
+rmagick_options = {:require => false}
+rmagick_options.update({
+  :git => 'git://github.com/refinerycms/rmagick.git',
+  :branch => 'windows'
+}) if Bundler::WINDOWS
 
 # Specify a version of RMagick that works in your environment:
-gem 'rmagick',                  '~> 2.12.0'  #, rmagick_options
+gem 'rmagick',                  '~> 2.12.0', rmagick_options
 
 # END REFINERY CMS ============================================================
 
