@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/refinerycms/rmagick.git
+  revision: 3e9594192a23efc7780ad09b8f07c4566aa921f4
+  branch: windows
+  specs:
+    rmagick (2.12.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
