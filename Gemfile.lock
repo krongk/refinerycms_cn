@@ -105,7 +105,7 @@ GEM
     truncate_html (0.4.0)
     tzinfo (0.3.23)
     will_paginate (3.0.pre2)
-    rmagick (~> 2.12.0)
+    rmagick
 PLATFORMS
   x86-mingw32
 
@@ -118,4 +118,4 @@ DEPENDENCIES
   refinerycms-inquiries (~> 0.9.8.8)
   refinerycms-news (~> 0.9.9)
   refinerycms-theming (~> 0.9.8)
-  rmagick (~> 2.12.0)
+  rmagick
