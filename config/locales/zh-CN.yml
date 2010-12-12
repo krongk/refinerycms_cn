@@ -3,272 +3,10 @@
 
 "zh-CN":
   shared:
+    admin:
+      help: '帮助'
     footer:
       copyright: "版权所有"
-  plugins:
-    refinery_dashboard:
-      title: "控制面板"
-    refinery_settings:
-      title: "设置"
-      description: "管理插件的设置"
-    refinery_inquiries:
-      title: "留言"
-    refinery_pages:
-      title: "页面"
-    refinery_images:
-      title: "图片"
-    refinery_files:
-      title: "文件"
-    refinery_users:
-      title: "用户"
-    refinerycms_news:
-      title: "新闻"
-      description: "展示新闻资讯"
-    portfolio:
-      title: "影集"
-      description: "展示图片集"
-    refinerycms_blog:
-      title: "文章"
-      description: "展示所有文章信息"
-  updated:
-    'with_article "the"': "更新"
-  created:
-    'with_article "the"': "添加"
-  admin:
-    blog:
-      categories:
-        category:
-          edit: "修改分类"
-          delete: "删除分类"
-        index:
-          no_items_yet: '还没有分类. 请点击 "{{create}}" 创建.'
-      comments:
-        approved: '评论来自： "{{author}}" ，已审核通过.'
-        comment:
-          view_live: '查看评论 <br/><em>(在新窗口中打开)</em>'
-          read: '查看评论'
-          reject: '拒收该评论'
-          approve: '核准该评论'
-        rejected: '评论来自："{{author}}" 已被拒绝.'
-        index:
-          no_items_yet: '{{type}}还没有添加任何评论.'
-        show:
-          comment: '评论'
-          blog_post: '文章'
-          from: '作者：'
-          date: '添加日期：'
-          message: '评论'
-          details: '详细'
-          age: '之前'
-          actions: '活动情况'
-          back: '返回'
-          reject: '拒收该评论'
-          approve: '核准该评论'
-      posts:
-        form:
-          advanced_options: '高级选项'
-          toggle_advanced_options: '点击设置网页meta标签和文章选项'
-          save_as_draft: '保存为草稿'
-          published_at: '发布日期'
-        index:
-          no_items_yet: '还没有任何文章. 请点击 "{{create}}" .'
-        post:
-          view_live: "预览<br/><em>(在新窗口中打开)</em>"
-          edit: '修改'
-          delete: '删除'
-      settings:
-        notification_recipients:
-          value: Send notifications to
-          explanation: 'Every time someone comments on a blog post, Refinery sends out an email to say there is a new comment.'
-          hint: 'When a new comment is added, Refinery will send an email notification to you.'
-          example: "Enter your email address(es) like: jack@work.com, jill@office.com"
-          updated: 'Notification recipients have been set to "{{recipients}}"'
-      submenu:
-        categories:
-          title: '分类'
-          manage: '管理'
-          new: '创建新分类'
-        comments:
-          title: '评论'
-          title_with_count: '新评论 ({{new_count}})'
-          new: '新'
-          unmoderated: '新'
-          approved: '已审核'
-          rejected: '已拒绝'
-        posts:
-          title: '文章'
-          manage: '管理文章'
-          new: '添加新文章'
-        settings:
-          title: '设置'
-          moderation: '评分审核'
-          update_notified: '修改提醒用户'
-    dashboard:
-      index:
-        quick_tasks: "快速导航"
-        add_a_new_page: "增加新页"
-        update_a_page: "添加新页面"
-        upload_a_image: "上传图片"
-        upload_a_file: "上传文件"
-        change_language: "选择语言"
-        see_home_page: "显示主页"
-      recent_activity:
-        latest_activity: "最近日志"
-        latest_activity_message: "%{what} %{kind} 已 %{action}"
-      recent_inquiries:
-        latest_inquiries: "最近留言"
-    refinery_settings:
-      delete: "彻底删除"
-      edit: "编辑"
-      index:
-        new: "添加新设置"
-        empty_set: There are no settings yet.
-        create_first: Click '%{link}' to add your first setting.
-      form:
-        restart_may_be_in_order: <strong>Please note</strong> that you may need to restart the website for this setting to take effect.
-        yes_make_this_setting_restricted: Yes, make this setting restricted only to superusers.
-        help:
-          restricted: This makes the setting only visible and editable by users who are superusers (like you).
-          activity_show_limit: This limits the number of items that can display in the Dashboard listing.
-          analytics_page_code: This code activates Google Analytics tracking within your website. If the setting is left blank or set to UA-xxxxxx-x then this is disabled and no remote calls to Google Analytics are made.
-          image_dialogue_sizes: This setting applies to the Insert Image dialogue. You must implement the different thumbnail sizes as well as changing this.
-          image_thumbnails: If you modify this setting you will have to regenerate your images by running rake images:regenerate (or rake images:update if you only added more thumbnails) otherwise the setting will not apply to existing images.
-          menu_hide_children: Hide any subpages from the menu even if they are present.
-          new_page_parts: Enable adding new page parts (content sections) in the page editors.
-          page_title: Very complex options for setting the page title. Here you can set custom CSS class or a different tag or tell it to breadcrumb with pages in its ancestry.
-          pages_advanced_options_include_seo: This controls whether the SEO options are displayed in the advanced options for a page.
-          preferred_image_view: This controls which view the images plugin displays existing images in - grid for 'Grid View' and list for 'List View'. There is a button to automate this process on the images plugin itself.
-          refinery_enable_backend_reordering: You can remove the ability to reorder the plugins' display order with this.
-          refinery_menu_cache_action_suffix: This controls the key that is used to cache the site menu. If you are using a theme then it is better to leave this as the default as the theme will handle it.
-          show_contact_privacy_link: You can hide or show the link to the privacy policy page on the contact form by the submit button.
-          site_name: This is the name for your website and will display in the header and in the Refinery backend and in the footer copyright statement for some themes.
-          theme: Enter the name for the theme that you want to be enabled. This will take effect immediately and must correctly identify an existing theme for this to work.
-          use_google_ajax_libraries: If you want to use Google's AJAX CDN then set this to true.
-          use_marketable_urls: Changes urls from /pages/about to /about and automatically manages conflicts with other plugins.
-          use_resource_caching: Recommended to enable this in production mode as it bundles javascript assets and stylesheet assets into single file packages to reduce the number of web requests on your site and speed it up.
-    inquiries:
-      inquiry:
-        read_inquiry: "读取"
-        said: "说："
-        mark_as_spam: "移至垃圾邮箱"
-        mark_as_ham: "移动到收件箱"
-      submenu:
-        inbox: "收件箱"
-        spam: "垃圾箱"
-        update_notified: "设置更新通知"
-        edit_confirmation_email: "设置确认邮箱"
-      index:
-        no_inquiries: "还没有任何内容"
-      spam:
-        no_spam: "万岁！您没有任何垃圾邮件"
-      show:
-        details: "详细"
-        age: "时间"
-        actions: "活动情况"
-        back_to_all_inquiries: "返回"
-        spam: "垃圾邮件"
-        spam_yes: '是'
-        inquiry: "留言"
-        to: "送至"
-        from: "来自"
-        click_to_email: "点击发送邮件"
-        phone: "电话"
-        date: "日期"
-        message: "信息"
-      delete: "删除"
-    inquiry_settings:
-      update:
-        updated: "'%{setting}' 设置成功."
-      notification_recipients_form:
-        inquiry_settings_value_name: "填写留言提醒邮箱"
-        explanation: "当网站接收到留言信息后，程序会自动向该邮箱发送一封提醒邮件"
-        hint: "当网站接收到留言信息后，程序会自动向该邮箱发送一封提醒邮件"
-        example: "请正确填写邮箱地址，如: master@inruby.com"
-      confirmation_email_form:
-        to: "送至"
-        from: "来自"
-        subject: "主题"
-        click_to_edit_subject: "修改主题"
-        explanation: "当网站接收到留言信息后，程序会自动向留言者邮箱回复一封邮件"
-        below_edit_email_sent: "你可以修改以下发送内容"
-        the_customer_making_inquiry: "对方邮箱"
-        message: "内容"
-        note: "注意: 请将内容中的 %name% 替换为客户的名字"
-    resources:
-      form:
-        download_current: "下载当前文件"
-        or: "或"
-        replace: " 替换为该文件..."
-        maximum_file_size: "文件最大为 %{megabytes} MB"
-      resource:
-        download: "下载该文件 (%{size})"
-        edit: "编辑"
-      index:
-        upload_new: "上传文件"
-        no_files_yet: "还没有任何文件，请点击(上传)上传文件"
-      insert:
-        existing: "文件已存在"
-        new: "新文件"
-        no_files: "没有任何文件"
-      existing_resource:
-        link_to_file: "链接到该文件"
-        button_text: "插入"
-  inquiry_mailer:
-    notification:
-      greeting: "你好"
-      you_recieved_new_inquiry: "网站刚接收到一条新留言"
-      inquiry_starts: "--- 留言开始 ---"
-      inquiry_ends: "--- 留言结束 ---"
-      from: "来自"
-      email: "邮箱"
-      phone: "电话"
-      message: "内容"
-      closing_line: "亲切问候"
-      ps: "提醒，网站所有的留言内容都会存储在'留言'菜单中"
-  activerecord:
-    models:
-      inquiry: "留言"
-  blog:
-    comment_mailer:
-      notification:
-        greeting: '你好'
-        you_recieved_new_comment: '你的网站刚收到一封新评论'
-        comment_starts: --- comment starts ---
-        comment_ends: --- comment ends ---
-        from: '来自'
-        email: '邮箱'
-        message: '信息'
-        closing_line: '亲切的问候'
-        ps: 'P.S. 所有的评论都会存储在博客栏目里面'
-    shared:
-      categories:
-        title: '分类'
-      rss_feed:
-        title: RSS Feed
-      posts:
-        other: '其它文章'
-        created_at: '添加时间： {{when}}'
-        read_more: '更多>>'
-      comments:
-        singular: '评论'
-        none: '还没有评论'
-    categories:
-      show:
-        no_posts: '还没有任何文章'
-    posts:
-      comment: '评论'
-      comments:
-        by: '作者： {{who}}'
-        time_ago: '{{time}} 前'
-        thank_you: '感谢您的评价.'
-        thank_you_moderated: '谢谢您的评价. 你的信息已经添加到消息队列，稍后将会显示在页面.'
-      show:
-        comments:
-          title: '评论'
-          add: '发表评论'
-        other: '其它文章'
-        filed_in: '归档'
-        submit: '发送'
   date:
     formats:
       default: "%Y-%m-%d"
@@ -321,9 +59,6 @@
       over_x_years:
         one: "一年多"
         other: "%{count} 年多"
-      almost_x_years:
-        one:   "接近一年"
-        other: "接近 %{count} 年"
     prompts:
       year:   "年"
       month:  "月"
@@ -370,17 +105,16 @@
       words_connector: ", "
       two_words_connector: " 和 "
       last_word_connector: ", 和 "
-    select:
-      prompt: "请选择"
   
   activerecord:
     errors:
-      template: # ~ 2.3.5 backward compatible
-        header:
+      template:
+        header: 
           one: "有 1 个错误发生导致「%{model}」无法被保存。"
           other: "有 %{count} 个错误发生导致「%{model}」无法被保存。"
         body: "如下字段出现错误："
       messages:
+        record_invalid: "校验失败: %{errors}"
         inclusion: "不包含于列表中"
         exclusion: "是保留关键字"
         invalid: "是无效的"
@@ -393,7 +127,6 @@
         wrong_length: "长度非法（必须为 %{count} 个字符）"
         taken: "已经被使用"
         not_a_number: "不是数字"
-        not_an_integer: "必须是整数"
         greater_than: "必须大于 %{count}"
         greater_than_or_equal_to: "必须大于或等于 %{count}"
         equal_to: "必须等于 %{count}"
@@ -401,12 +134,3 @@
         less_than_or_equal_to: "必须小于或等于 %{count}"
         odd: "必须为单数"
         even: "必须为双数"
-        record_invalid: "校验失败: %{errors}"
-  
-  activemodel:
-    errors:
-      template:
-        header:
-          one: "有 1 个错误发生导致「%{model}」无法被保存。"
-          other: "有 %{count} 个错误发生导致「%{model}」无法被保存。"
-        body: "如下字段出现错误："

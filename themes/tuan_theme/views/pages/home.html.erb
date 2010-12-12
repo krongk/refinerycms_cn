@@ -1,1 +1,13 @@
 <%= render :partial => "/shared/content_page" %>
+
+<% content_for :head_libraries do -%>
+  <script type="text/javascript" src="/theme/javascripts/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="/theme/javascripts/jquery.tinycarousel.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//$('#slider1').tinycarousel();	
+			$('#slider1').tinycarousel({ pager: true, interval: true  });
+			//$('#slider1').tinycarousel({ display: 2 });
+		});
+	</script>	
+<% end -%>
