@@ -52,7 +52,7 @@ gem 'refinerycms-i18n',         '~> 0.9.8.7'
  }) if Bundler::WINDOWS
 
 # Specify a version of RMagick that works in your environment:
- gem 'rmagick',  '~> 2.12.0', rmagick_options
+ gem 'rmagick',  '2.12.0', rmagick_options
 
 # END REFINERY CMS ============================================================
 

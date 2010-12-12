@@ -125,4 +125,4 @@ DEPENDENCIES
   refinerycms-inquiries (~> 0.9.8.8)
   refinerycms-news (~> 0.9.9)
   refinerycms-theming (~> 0.9.8)
-  rmagick (~> 2.12.0)!
+  rmagick (= 2.12.0)!
