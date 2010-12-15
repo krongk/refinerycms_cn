@@ -54,6 +54,7 @@ body {
     position: absolute;
     bottom: 13px;
     margin: 0px;
+	z-index:10;
 }
 #header_content #menu {
     right: 85px;
@@ -133,7 +134,8 @@ body {
 	background-position: left 12px;
 	margin: 0px;
 	padding-left: 20px;
-	font-size: 14px;
+	font-size: 16px;
+	font-weight:600; 
 	padding-bottom: 6px;
 }
 /*round box*/

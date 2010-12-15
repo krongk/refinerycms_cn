@@ -17,7 +17,7 @@
 }
 
 /* Tiny Carousel */
-#slider1 { height: 1%; overflow:hidden; padding: 0 0 10px;   }
+#slider1 { height: 1%; overflow:hidden; padding: 0 0 10px; z-index:1;   }
 #slider1 .viewport { float: left; width: 970px; height: 125px; overflow: hidden; position: relative; }
 #slider1 .buttons { background:url("/theme/images/buttons.png") no-repeat scroll 0 0 transparent; display: block; margin: 30px 10px 0 0; background-position: 0 -38px; text-indent: -999em; float: left; width: 39px; height: 37px; overflow: hidden; position: relative; }
 #slider1 .next { background-position: 0 0; margin: 30px 0 0 10px;  }

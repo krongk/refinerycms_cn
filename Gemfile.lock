@@ -1,3 +1,8 @@
+PATH
+  remote: vendor/plugins/rmagick-3e9594192a23
+  specs:
+    rmagick (2.12.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -118,3 +123,4 @@ DEPENDENCIES
   refinerycms-inquiries (~> 0.9.8.8)
   refinerycms-news (~> 0.9.9)
   refinerycms-theming (~> 0.9.8)
+  rmagick (= 2.12.0)!

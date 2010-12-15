@@ -10,7 +10,7 @@
                  :exclude_jquery => false
                } %>
 		<%#add riding text on the top %>
-		<% if riding_text = RefinerySetting.find_or_set(:riding_text, "&nbsp;") -%>
+		<% if riding_text = RefinerySetting.find_or_set(:a_riding_text, "welcome to our site").html_safe -%>
 		 <div class="riding_text"><marquee behavior='alternate' direction='right' align='middle' border=0><%=riding_text%></marquee></div>
 		<%end -%>
 		

@@ -45,14 +45,14 @@ gem 'refinerycms',              '~> 0.9.8.5'
 gem 'refinerycms-i18n',         '~> 0.9.8.7'
 
 # Figure out how to get RMagick:
-#  rmagick_options = {:require => false}
-#  rmagick_options.update({
-#    :git => 'git://github.com/refinerycms/rmagick.git',
-#    :branch => 'windows'
-#  }) if Bundler::WINDOWS
-# 
-# # Specify a version of RMagick that works in your environment:
-#  gem 'rmagick',  '2.12.0', rmagick_options
+ rmagick_options = {:require => false}
+ rmagick_options.update({
+   :path => 'vendor/plugins/rmagick-3e9594192a23',
+   :branch => 'windows'
+ }) if Bundler::WINDOWS
+
+# Specify a version of RMagick that works in your environment:
+ gem 'rmagick',  '2.12.0', rmagick_options
 
 # END REFINERY CMS ============================================================
 
