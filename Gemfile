@@ -54,7 +54,7 @@ gem 'refinerycms-i18n',         '~> 0.9.8.7'
 # # Specify a version of RMagick that works in your environment:
 #  gem 'rmagick',  '2.12.0', rmagick_options
 
- gem 'rmagick',  '2.12.0', :path => 'vendor/plugins/rmagick-3e9594192a23'
+ gem 'rmagick',  '2.12.0'#, :path => 'vendor/plugins/rmagick-3e9594192a23'
 # END REFINERY CMS ============================================================
 
 # USER DEFINED
