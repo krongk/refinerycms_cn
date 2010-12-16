@@ -105,12 +105,14 @@ GEM
     truncate_html (0.4.0)
     tzinfo (0.3.23)
     will_paginate (3.0.pre2)
-    rmagick (~> 2.12.0)
+
 PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  dragonfly (~> 0.7.5)
   pg (= 0.9.0)
+  rack-cache
   rails (= 3.0.0)
   refinerycms (~> 0.9.8.5)
   refinerycms-blog (= 1.0.rc16)
@@ -118,4 +120,3 @@ DEPENDENCIES
   refinerycms-inquiries (~> 0.9.8.8)
   refinerycms-news (~> 0.9.9)
   refinerycms-theming (~> 0.9.8)
-  rmagick (~> 2.12.0)
