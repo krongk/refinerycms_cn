@@ -1,12 +1,12 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0'
+gem 'rails', '3.0.3'
 gem 'pg', '0.9.0'
 
 # REFINERY CMS ================================================================
-
+java = (RUBY_PLATFORM == 'java')
 # Specify the Refinery CMS core:
-gem 'refinerycms',              '~> 0.9.8.5'
+gem 'refinerycms',              '~> 0.9.8.8'
 
 # Specify additional Refinery CMS Engines here (all optional):
  gem 'refinerycms-inquiries',    '~> 0.9.8.8'
@@ -19,6 +19,4 @@ gem 'refinerycms',              '~> 0.9.8.5'
 gem 'refinerycms-i18n',         '~> 0.9.8.7'
 
 # override dragonfly because this version doesn't require RMagick
-#gem 'dragonfly',                :git => 'git://github.com/refinerycms/dragonfly.git', :branch => 'master'
- gem 'rack-cache', :require => 'rack/cache'
- gem 'dragonfly', '~>0.7.5'
+# gem 'dragonfly',                :git => 'git://github.com/refinerycms/dragonfly.git', :branch => 'master'

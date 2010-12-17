@@ -167,6 +167,7 @@ ActiveRecord::Schema.define(:version => 20101201004501) do
     t.string   "scoping"
     t.boolean  "restricted",              :default => false
     t.string   "callback_proc_as_string"
+    t.string   "form_value_type"
   end
 
   add_index "refinery_settings", ["name"], :name => "index_refinery_settings_on_name"
@@ -189,6 +190,9 @@ ActiveRecord::Schema.define(:version => 20101201004501) do
     t.integer "user_id"
     t.integer "role_id"
   end
+
+  add_index "roles_users", ["role_id", "user_id"], :name => "index_roles_users_on_role_id_and_user_id"
+  add_index "roles_users", ["user_id", "role_id"], :name => "index_roles_users_on_user_id_and_role_id"
 
   create_table "slugs", :force => true do |t|
     t.string   "name"
