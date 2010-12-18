@@ -32,7 +32,7 @@ body {
     margin: 0px auto;
 }
 #header {
-    /*background: url('/theme/images/header_background.png') repeat-x; */
+    background: url('/theme/images/header_background.png') repeat-x; 
 }
 #header_content {
     position: relative;
@@ -57,7 +57,7 @@ body {
 	z-index:10;
 }
 #header_content #menu {
-    right: 85px;
+    right: 75px;
     padding: 0px;
 }
 #language_switcher {
