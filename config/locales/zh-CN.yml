@@ -2,6 +2,9 @@
 # by tsechingho (http://github.com/tsechingho)
 
 "zh-CN":
+  plugins:
+    refinery_users:
+      title: '用户'
   shared:
     admin:
       help: '帮助'
