@@ -2,14 +2,297 @@
 # by tsechingho (http://github.com/tsechingho)
 
 "zh-CN":
+  welcome:
+    there_are_no_users: "还没有任何用户，请添加一个用户."
+    remember_admin_location: "请记住你的管理员权限:"
+    lets_start: "首先注册一个账户，以登录的网站后台..."
+    continue: "继续..."
+  admin:
+    menu:
+      reorder_menu: "重新排序"
+      reorder_menu_done: "排序完毕"
+    dialogs:
+      show:
+        save: '保存'
+        cancel: '取消'
+  refinery:
+    other: "其他 %{what}"
+    reorder: "排序 %{what}"
+    reorder_done: "完成排序：%{what}"
+    crudify:
+      created: "%{what} 已成功添加."
+      updated: "%{what} 已成功更新."
+      destroyed: "%{what} 已成功删除."
+  shared:
+    site_bar:
+      log_out: "退出"
+      switch_to_your_website: "切换到网站前台"
+      switch_to_your_website_editor: "切换到网站后台"
+    admin:
+      error_messages:
+        problems_in_following_fields: '以下项目出现错误，请检查'
+      continue_editing:
+        save_and_continue_editing: "保存并继续修改"
+      form_actions:
+        or: "或"
+        save: "保存"
+        or_cancel: "或"
+        cancel: "取消"
+        or_continue: "或"
+        cancel_lose_changes: "取消后将会丢失所有改变的内容，你希望  %{object_name} 吗？"
+        delete: "删除"
+        previous: "上一页"
+        next: "下一页"
+        close: "关闭"
+      image_picker:
+        none_selected: "现在还没有任何选择的 %{what}, 请点击这里添加."
+        remove_current: "删除 %{what}"
+        change: "点击这里添加图片"
+        image: "图片"
+        show: "显示"
+      resource_picker:
+        download_current: '下载当前文件'
+        opens_in_new_window: '在新窗口中打开'
+        remove_current: "删除当前文件"
+        no_resource_selected: "现在还没有任何选择的 %{what}, 请点击这里添加."
+        name: '添加文件'
+        current: '当前文件'
+      search:
+        button_text: "搜索"
+        results_for: "搜索内容： '%{query}'"
+        no_results: "没有找到任何结果"
+      delete:
+        message: "确认要删除'%{title}'?"
+        title: "彻底删除 %{object_name}"
+      edit:
+        title: "编辑 %{object_name}"
+    message:
+      close: "关闭"
+      close_this_message: "关闭该信息"
+    draft_page_message:
+      not_live: '该页'
+    footer:
+      copyright: "版权所有&copy;"
+
+  plugins:
+    refinery_dashboard:
+      title: "控制面板"
+  admin:
+    dashboard:
+      index:
+        quick_tasks: "快速任务"
+        add_a_new_page: "增加新页"
+        update_a_page: "添加新页面"
+        upload_a_image: "上传图片"
+        upload_a_file: "上传文件"
+        change_language: "选择语言"
+        see_home_page: "显示主页"
+      recent_activity:
+        latest_activity: "最近日志"
+        latest_activity_message: %{what} %{kind} %{action}
+      recent_inquiries:
+        latest_inquiries: "最近留言"
+  updated:
+    'with_article "the"': "已更新"
+  created:
+    'with_article "the"': "已添加"
+
+  plugins:
+    refinerycms_blog:
+      title: "页面"
+  admin:
+    blog:
+      categories:
+        category:
+          edit: "修改分类"
+          delete: "删除分类"
+        index:
+          no_items_yet: '还没有分类. 请点击 "{{create}}" 创建.'
+      comments:
+        approved: '评论来自： "{{author}}" ，已审核通过.'
+        comment:
+          view_live: '查看评论 <br/><em>(在新窗口中打开)</em>'
+          read: '查看评论'
+          reject: '拒收该评论'
+          approve: '核准该评论'
+        rejected: '评论来自："{{author}}" 已被拒绝.'
+        index:
+          no_items_yet: '{{type}}还没有添加任何评论.'
+        show:
+          comment: '评论'
+          blog_post: '文章'
+          from: '作者：'
+          date: '添加日期：'
+          message: '评论'
+          details: '详细'
+          age: '之前'
+          actions: '活动情况'
+          back: '返回'
+          reject: '拒收该评论'
+          approve: '核准该评论'
+      posts:
+        form:
+          advanced_options: '高级选项'
+          toggle_advanced_options: '点击设置网页meta标签和文章选项'
+          save_as_draft: '保存为草稿'
+          published_at: '发布日期'
+        index:
+          no_items_yet: '还没有任何文章. 请点击 "{{create}}" .'
+        post:
+          view_live: "在线查看 <br/><em>(在新窗口中打开)</em>"
+          edit: '修改'
+          delete: '删除'
+      settings:
+        notification_recipients:
+          value: '发送提醒到'
+          explanation: '当有用户给文章添加评论的时候, 程序会自动通知邮件接收者.'
+          hint: '当有用户给文章添加评论的时候, 程序会自动通知邮件接收者.'
+          example: "填入接收者邮件(可以是多个) 如: jack@inruby.com, jill@inruby.com"
+          updated: '邮件提醒已提交到 "{{recipients}}"'
+      submenu:
+        categories:
+          title: '分类'
+          manage: '管理'
+          new: '创建新分类'
+        comments:
+          title: '评论'
+          title_with_count: '新评论 ({{new_count}})'
+          new: '新'
+          unmoderated: '新'
+          approved: '已审核'
+          rejected: '已拒绝'
+        posts:
+          title: '文章'
+          manage: '管理文章'
+          new: '添加新文章'
+        settings:
+          title: '设置'
+          moderation: '评分审核'
+          update_notified: '修改提醒用户'
+  blog:
+    comment_mailer:
+      notification:
+        greeting: '你好'
+        you_recieved_new_comment: '你的网站刚收到一封新评论'
+        comment_starts: --- comment starts ---
+        comment_ends: --- comment ends ---
+        from: '来自'
+        email: '邮箱'
+        message: '信息'
+        closing_line: '亲切的问候'
+        ps: P.S. All your comments are stored in the "Blog" section of Refinery under the "Comments" submenu should you ever want to view it later there.
+    shared:
+      categories:
+        title: '分类'
+      rss_feed:
+        title: RSS Feed
+      posts:
+        other: '其它文章'
+        created_at: '添加时间： {{when}}'
+        read_more: '更多>>'
+      comments:
+        singular: '评论'
+        none: '还没有评论'
+    categories:
+      show:
+        no_posts: '还没有任何文章'
+    posts:
+      comment: '评论'
+      comments:
+        by: '作者： {{who}}'
+        time_ago: '{{time}} 前'
+        thank_you: '感谢您的评价.'
+        thank_you_moderated: '谢谢您的评价. 你的信息已经添加到消息队列，稍后将会显示在页面.'
+      show:
+        comments:
+          title: '评论'
+          add: '发表评论'
+        other: '其它文章'
+        filed_in: '归档'
+        submit: '发送'
+
   plugins:
     refinery_users:
       title: '用户'
-  shared:
-    admin:
-      help: '帮助'
-    footer:
-      copyright: "版权所有"
+  admin:
+    users:
+      delete: '彻底删除该用户'
+      edit: '修改'
+      update:
+        cannot_remove_user_plugin_from_current_user: "你不能删除用户插件"
+      form:
+        blank_password_keeps_current: "留空白表示保留当前密码"
+        enable_all: "使所有生效"
+      index:
+        create_new_user: "添加新用户"
+        no_users_yet:  '还没有新用户，点击 "添加新用户" 添加'
+      user:
+        confirm_delete_message: "你确定要删除 '%{who}'?"
+        confirm_delete_title: "彻底删除该用户"
+        edit_user: "编辑"
+        email_user: "发邮件"
+        preview: "(%{who}) 于 %{created_at} 添加成功"
+  sessions:
+    login_successful: "登录成功"
+    login_failed: "对不起，用户名或密码错误，请检查"
+    logged_out: "退出成功"
+    new:
+      hello_please_sign_in: "你好! 请登录."
+      sign_in: "登录"
+      forgot_password: "忘记密码了？"
+  users:
+    setup_website_name: "首先，请给网站取个名字. <a href='%{link}' name='%{title}'>点击这里</a> 修改网站名字"
+    signup_disabled: "用户注册被禁用"
+    new:
+      fill_form: "请填写以下内容"
+      sign_up: "注册"
+    create:
+      welcome: "欢迎光临, %{who}"
+      signup_complete: "注册成功！"
+    forgot:
+      email_address: "邮箱地址"
+      enter_email_address: "请填写账号的邮箱地址"
+      reset_password: "重置密码"
+      blank_email: "邮箱必填"
+      email_not_associated_with_account: "对不起, '%{email}'关联不到任何帐户.<br/>请确定你输入的邮件地址是否正确?"
+      email_reset_sent: "邮件已经发送到你邮箱，通过邮件内容链接可以修改密码"
+    reset:
+      code_invalid: "对不起，链接已经过期. 请重新操作."
+      successful: "恭喜你，%{email}的密码更新成功"
+      pick_new_password_for: "给%{email}设置一个新邮件"
+      reset_password: "设置新密码"
+      password_blank: "重新输入相同的密码"
+  user_mailer:
+    please_activate: "请激活你的新帐户"
+    activated: "你的帐户已成功激活"
+    activated_email: "%{who}, 你的帐户已成功激活. 现在你可以添加新的插件了："
+    account_created: "你的帐户已成功创建"
+    user_name: "用户名： %{name}"
+    password: "密码：%{password}"
+    visit_url: "通过此链接激活你的帐户:"
+    link_to_reset_your_password: "通过此链接重置密码"
+  authlogic:
+    error_messages:
+      login_blank: "不能为空"
+      login_not_found: "没有找到该账号，请确认"
+      login_invalid: "只能是字母、数字、空格和 .-_@ "
+      consecutive_failed_logins_limit_exceeded: "帐户登录次数过多，已超过登录限制"
+      email_invalid: "请输入正确的邮箱地址"
+      password_blank: "不能为空"
+      password_invalid: "不是有效的"
+      not_active: "你的帐户没有激活"
+      not_confirmed: "你的帐户还没有确认"
+      not_approved: "你的帐户还没有审核通过"
+      no_authentication_details: "没有提供任何身份认证信息"
+    models:
+      user_session: "用户会话"
+    attributes:
+      user_session:
+        login: "登录"
+        email: "邮箱"
+        password: "密码"
+        remember_me: "记住登录状态"
+        incorrect: "对不起 %{login_field} 或密码不正确."
   date:
     formats:
       default: "%Y-%m-%d"
