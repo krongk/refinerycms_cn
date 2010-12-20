@@ -1,7 +1,7 @@
 zh-CN:
   plugins:
     refinerycms_blog:
-      title: "页面"
+      title: "博客"
   admin:
     blog:
       categories:
