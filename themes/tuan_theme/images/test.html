@@ -1,0 +1,38 @@
+<html>
+<head>
+
+
+</head>
+<body>
+
+<DIV class="list" style="background-color:green; width: 600px; height:112px;padding-left:5px;">
+<DIV style="overflow:hidden;position:relative;height:102px;">
+<DIV id="SC_3" style="position: absolute; left: 0px; top: -943px; " init="1">
+	<table><tr>
+ <td><img src='zhengshu1.jpg' /></td>
+ <td><img src='zhengshu2.jpg' /></td>
+ <td><img src='zhengshu3.jpg' /></td>
+ <td><img src='zhengshu4.jpg' /></td>
+ </tr></table></DIV>		
+</DIV></DIV></DIV>
+
+
+<div id="marquee_div"> 
+ <table><tr>
+ <td><img src='zhengshu1.jpg' /></td>
+ <td><img src='zhengshu2.jpg' /></td>
+ <td><img src='zhengshu3.jpg' /></td>
+ <td><img src='zhengshu4.jpg' /></td>
+ </tr></table>
+</div>
+
+<SCRIPT>
+var obj = document.getElementById('marquee_div');
+alert(obj.innerHTML);
+alert("<marquee>" + obj.innerHTML + "</marquee>");
+obj.innerHTML = "<marquee>" + obj.innerHTML + "</marquee>";
+</SCRIPT>
+
+
+
+</body>
