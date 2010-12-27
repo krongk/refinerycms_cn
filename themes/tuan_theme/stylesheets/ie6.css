@@ -27,7 +27,25 @@ a{
     list-style: none;
     position: relative;
 }
-#menu a, #menu li:hover ul li a, #menu a:hover nav a {
+#menu a{
+    color: #ffffff;
+    display: block;
+    padding: 10px 18px;
+    text-decoration: none;
+    cursor: pointer;
+	font-size:15px;
+	font-weight:bolder;	
+}
+#menu li:hover ul li a{
+    color: #ffffff;
+    display: block;
+    padding: 10px 18px;
+    text-decoration: none;
+    cursor: pointer;
+	font-size:15px;
+	font-weight:bolder;	
+}
+#menu a:hover nav a {
     color: #ffffff;
     display: block;
     padding: 10px 18px;
