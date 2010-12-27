@@ -4,7 +4,7 @@ zh-CN:
       title: '文件'
   must_choose_file: '选择一个文件上传'
   file_specify_for_upload: '请选择一个文件上传'
-  file_should_be_smaller_than_max_file_size: '文件大小最大允许为 %{max_file_size} '
+  file_should_be_smaller_than_max_file_size: "文件大小最大允许为 %{max_file_size}"
   admin:
     resources:
       delete: '彻底删除'
@@ -13,9 +13,9 @@ zh-CN:
         download_current: '下载当前文件'
         or: '或'
         replace: "替换为该文件..."
-        maximum_file_size: '文件大小最大允许为 %{megabytes} MB'
+        maximum_file_size: "文件大小最大允许为 %{megabytes} MB"
       resource:
-        download: '下载该文件(%{size})'
+        download: "下载该文件(%{size})"
         edit: '修改该文件'
       index:
         upload_new: '上传新文件'
