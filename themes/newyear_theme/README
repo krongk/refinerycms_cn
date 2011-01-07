@@ -1,0 +1,7 @@
+#Clean simple theme used and provided for free with Refinery. It's used in the demo Refinery site, http://demo.refinerycms.org
+Jiazheng version 0.1.1
+
+setting:
+ :riding_text => '跑马灯文字效果'
+ :qq					=> 'QQ list ex: 38434,34343595'
+

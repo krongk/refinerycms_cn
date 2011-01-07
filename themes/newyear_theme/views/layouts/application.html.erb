@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <%= render :partial => "/shared/head", :locals => {:theme => true} %>
+  <body>
+    <%= render :partial => "/shared/site_bar",
+               :locals => {
+                 :exclude_css => false,
+                 :exclude_cornering_library => false,
+                 :exclude_site_bar_javascript => false,
+                 :exclude_jquery => false
+               } %>
+		<%#add riding text on the top %>
+		<% if riding_text = RefinerySetting.find_or_set(:a_riding_text, "welcome to our site").html_safe -%>
+		 <div class="riding_text"><marquee behavior='alternate' direction='right' align='middle' border=0><%=riding_text%></marquee></div>
+		<%end -%>
+		
+    <div id='page_container'>
+      <div id='page'>
+        <%= render :partial => "/shared/ie6check" if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
+        <div id='header'>
+          <%= render :partial => "/shared/header" %>
+        </div>
+        <div id='body' class='clearfix'>
+				  <% if home_page? -%>
+				    <!--slider -->
+							<div id="slider1">
+							<div class="viewport">
+								<ul class="overview">								
+									<li><img src="/theme/images/banner2.png" /></li>
+									<li><img src="/theme/images/banner1.png" /></li>
+									<li><img src="/theme/images/banner0.png" /></li>
+								</ul>
+							</div>
+						</div>
+					<%else -%>
+					  <div id='banner'><%=image_tag "/theme/images/banner#{((rand()*10).to_i)%3}.png" %></div>
+					<%end -%>
+          <%= yield %>
+        </div>
+        <div id='footer'>
+          <%= render :partial => "/shared/footer" %>
+        </div>
+      </div>
+    </div>
+		<%#add QQ online%>
+		<%=render :partial => "/shared/qq" %>
+  </body>
+</html>
